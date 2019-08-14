@@ -1,8 +1,9 @@
 import React from "react";
 import "../../App.css";
 
-const Display = () => {
+const Display = props => {
   return <div className="display">
+    {props.num}
   </div>;
 };
 
