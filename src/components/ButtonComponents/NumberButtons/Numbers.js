@@ -6,13 +6,13 @@ import NumberButton from "./NumberButton";
 
 //Import your array data to from the provided data file
 
-const Numbers = () => {
+const Numbers = props => {
 
   //const [lildigits, setLildigits] = useState(1);
   // STEP 2 - add the imported data to state
   //const [number, setNumber] = useState(0);
   const digits = numbers.map(digit => {
-    return <NumberButton digit={digit} />
+    return <NumberButton addNumber={props.addNumber} digit={digit} />
   });
 
   console.log(numbers);
