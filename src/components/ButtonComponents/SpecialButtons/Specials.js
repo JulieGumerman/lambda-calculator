@@ -7,10 +7,10 @@ import SpecialButton from "./SpecialButton";
 
 //Import your array data to from the provided data file
 
-const Specials = () => {
+const Specials = props => {
 
   let specialCharacters = specials.map(character => {
-    return <SpecialButton character={character}/>
+    return <SpecialButton clearDisplay={props.clearDisplay} character={character}/>
   })
   // STEP 2 - add the imported data to state
 
